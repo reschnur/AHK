@@ -1,0 +1,22 @@
+Normal:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+get top level folder from list view
+build destination path
+set source path
+Loop through source path top level.
+   If file then copy
+      continue
+   If folder then 
+      extract lowest level
+      If node_modules, .git, .vscode 
+         continue (don't copy)
+      else
+         copy  
+end loop
+
+udemy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+get subfolder
+submit that subfolder to the copy files function to skip node_modules, .git and .vscode
+
+Skip .git? Maybe not

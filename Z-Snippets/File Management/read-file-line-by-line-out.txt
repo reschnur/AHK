@@ -1,0 +1,114 @@
+{
+"id": "Village 1_6,64,213",
+"name:Village 1",
+"icon": waypoint-normal.png,
+"x:6",
+"y:64",
+"z:213",
+"r": 28,
+"g": 249,
+"b": 175,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+
+{
+"id": "Desert Temple_-433,65,266",
+"name:Desert Temple",
+"icon": waypoint-normal.png,
+"x:-433",
+"y:65",
+"z:266",
+"r": 69,
+"g": 235,
+"b": 213,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+
+{
+"id": "Mine exit_-634,36,457",
+"name:Mine exit",
+"icon": waypoint-normal.png,
+"x:-634",
+"y:36",
+"z:457",
+"r": 31,
+"g": 151,
+"b": 92,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+
+{
+"id": "Village 2_-239,71,84",
+"name:Village 2",
+"icon": waypoint-normal.png,
+"x:-239",
+"y:71",
+"z:84",
+"r": 132,
+"g": 158,
+"b": 159,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+
+{
+"id": "Stronghold?_-201,63,88",
+"name:Stronghold?",
+"icon": waypoint-normal.png,
+"x:-201",
+"y:63",
+"z:88",
+"r": 194,
+"g": 105,
+"b": 190,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+
+{
+"id": "Latest Death_-190,27,61",
+"name:Latest Death",
+"icon": waypoint-normal.png,
+"x:-190",
+"y:27",
+"z:61",
+"r": 131,
+"g": 113,
+"b": 122,
+"enable": true,
+"type": "Normal",
+"origin": "journeymap",
+"dimensions": [
+0
+],
+"persistent": true
+}
+

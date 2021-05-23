@@ -3,7 +3,7 @@ SendMode Input
 SetWorkingDir, %A_ScriptDir%
 
 SrcFolder = C:\Users\resch\Software Projects\JavaScript\NodeExpress-Anson
-DstFolder = E:\Backup Test
+DstFolder = E:\Backup Test-%now%
 
 CopyRootFolders(Source, Dest, CopyRootFiles:=false)
 {

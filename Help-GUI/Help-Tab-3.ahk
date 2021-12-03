@@ -25,7 +25,7 @@ Gui, Font, Verdana s12 cBlack bold underline
 ; AltSubmit puts tab number in var not name
 ; GUI size can be different than tabbed part of gui.
 ; "Gui, tab," resets GUI to outside of tabbed area 
-gui, add, tab3, x6 y6 vtabs -wrap, Minecraft Common|Minecraft Fabric|Java|IntelliJ|Trello|Cities Common|Cities Roads|Cities Move/Find
+gui, add, tab3, x6 y6 vtabs -wrap, Minecraft Common|Minecraft Fabric|Java|VSCode|Trello|Cities Common|Cities Roads|Cities Move/Find|Mars
 
 
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -156,6 +156,8 @@ Cartography:|Existing map in top slot
 |Glass pane bottom slot lock map
 |
 Cycle Painting|Click paintingon wall with another painting
+|
+Edit Sign|Right-click
 )
 
 
@@ -591,10 +593,10 @@ LV_ModifyCol(2, "AutoHdr")
 
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-; Tab 5 - IntelliJ
+; Tab 5 - VSCode
 ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-gui, tab, IntelliJ
+gui, tab, VSCode
   
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ; Block 1
@@ -613,6 +615,8 @@ t5block1data=
 ~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~
 alt-f7|Find references
 alt-1|open/close project sidebar
+f1|Command Pallet
+Win-Alt-P|Peacock Border Color
 )
 
 
@@ -650,6 +654,7 @@ t5block2data=
 ~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~
 alt-f7|Find references
 alt-1|open/close project sidebar
+CTRL-F1|Open AHK help (only for AHK)
 )
 
 
@@ -1490,6 +1495,120 @@ Pad-9|Increase/decrease range
 
 
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; Tab 10 - Surviving Mars
+; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+gui, tab, Mars
+  
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+; Block 1
+
+Tab_10_Block_1:
+
+t10block1title = Shortcut Keys
+t10block1rows = 28
+
+t10block1x = 15
+t10block1y = 40
+t10block1w = 350
+
+t10block1data= 
+(
+~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~
+W|Pan Up
+S|Pan Down
+A|Pan Left
+D|Pan Right
+Q|Rotate Camera Left
+E|Rotate Camera Right
+Home|Reset Camera
+-|
+Space|Pause
++|Speed Up
+-|Slow Down
+Numpad *|Toggle High Speed
+-|
+R|Rotate Building Left
+T|Rotate Building Right
+-|
+X|Deploy Orbital Probe
+Y|Radio
+Pg-Up|Next Dome
+Pg-Dn|Prev Dome
+Delete|Salvage
+Backspace|Last Notification
+End|Last Constructed Building
+)
+
+
+Gui, Font, Verdana s12 cPurple bold underline
+Gui, Add, Text, x%t10block1x% y%t10block1y%, %t10block1Title%
+Gui, Font, Verdana s9 cBlack norm
+
+Gui, Add, Listview, x%t10block1x% y+6 w%t10block1w% r%t10block1rows% Hdr Grid NoSortHdr NoSort ReadOnly, Key|Function
+
+Loop, Parse, t10block1data, `n, `r
+{
+	 StringSplit, data, A_LoopField, | 
+	 LV_Add("", data1, data2)
+}
+
+LV_ModifyCol()                               ; Auto width columns()
+LV_ModifyCol(1, "AutoHdr") 
+LV_ModifyCol(2, "AutoHdr") 	
+
+  
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+; Block 2
+
+Tab_10_Block_2:
+
+t10block2title = JShell
+t10block2rows = 20
+
+t10block2x = 380
+t10block2y = 40
+t10block2w = 350
+
+t10block2data= 
+(
+~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~
+B|Build Menu
+M|Map Menu
+P|Resupply Screen
+H|Research Screen
+O|Colony Overview
+L|Milestones
+-|
+C|Power Cables
+V|Pipes
+J|Large Solar
+K|Power Accumulator
+N|Solar Panel
+U|Universal Depot
+)
+
+
+Gui, Font, Verdana s12 cPurple bold underline
+Gui, Add, Text, x%t10block2x% y%t10block2y%, %t10block2Title%
+Gui, Font, Verdana s9 cBlack norm
+
+Gui, Add, Listview, x%t10block2x% y+6 w%t10block2w% r%t10block2rows% Hdr Grid NoSortHdr NoSort ReadOnly, Key|Function
+
+Loop, Parse, t10block2data, `n, `r
+{
+	 StringSplit, data, A_LoopField, | 
+	 LV_Add("", data1, data2)
+}
+
+LV_ModifyCol()                               ; Auto width columns()
+LV_ModifyCol(1, "AutoHdr") 
+LV_ModifyCol(2, "AutoHdr") 	
+
+
+
+; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ; @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1524,6 +1643,6 @@ Return
 ; 2.2.0    Rework into 4 columns so the F3 shortcut keys would fit
 ;          Made the fonts slightly smaller so the width was smaller to fit 4 columns
 ; 2.3.0    Realigned some columns and added light overlay keys
-; 2.4.0    Rework corrdinates to be parameter driven as much as possible and to apply the 
+; 2.4.0    Rework coordinates to be parameter driven as much as possible and to apply the 
 ;          many things I have learned about gui's since I first developed this one.
 ; 3.0.0    Converted to multi-tab and added other programs

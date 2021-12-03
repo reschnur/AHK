@@ -1,0 +1,8 @@
+GUI Setup
+
+; left right top bottom, border
+; specifying "buttons" as option changes look of tabs 
+; double || changes default if not first tab
+; AltSubmit puts tab number in var not name
+; GUI size can be different than tabbed part of gui.
+; "Gui, tab," resets GUI to outside of tabbed area 

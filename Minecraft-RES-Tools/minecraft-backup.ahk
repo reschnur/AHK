@@ -63,7 +63,7 @@ Loop, Read, %WorldNamesFile%
     if RecNo = 1
 	   continue
 
-    ; Skip bad folder names       case,  start, occurance	   
+    ; Skip bad folder names       case,  start, occurrence	   
     If InStr(A_LoopReadLine, "xxx", false, 1, 3)    
 	   continue
 
@@ -111,7 +111,7 @@ While RowNumber < RowCount
 
 	LV_Add("", Var2_2, ProfilePath)        
     LV_ModifyCol(1, "AutoHdr") 
-	LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still avaialbe for processing.
+	LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still available for processing.
 	
 	RowNumber += 1
 }

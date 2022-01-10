@@ -1401,7 +1401,7 @@ BuildTabs:
 
         Tab_10_Block_2:
 
-          t10block2title = JShell
+          t10block2title = More Keys
           t10block2rows = 20
 
           t10block2x = 380

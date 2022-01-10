@@ -63,7 +63,7 @@ While RowNumber < RowCount
    LV_Add("", Var2_1, Var2_2) ;, var2_3) ;BackupSrcPath)        
    LV_ModifyCol(1, "AutoHdr") 
    LV_ModifyCol(2, "AutoHdr") 
-   ;LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still avaialbe for processing.
+   ;LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still available for processing.
 
    RowNumber += 1
 }

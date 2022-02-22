@@ -5,7 +5,7 @@
 ; It made the pick list look messy and confusing.
 
 ; The change was also to help with the list view in the utility and other scripts. 
-; The world path is hidden in the lsitview entries, but can be extracted when used. 
+; The world path is hidden in the listview entries, but can be extracted when used. 
 ; This is more efficient than working in arrays or other methods.
 
 
@@ -63,11 +63,11 @@ Tools Folder`n %ToolsFolder%`n
 BackupFolder`n %BackupFolder%`n
 Local Folder`n %LocalFolder%`n
 Cloud Folder`n %CloudFolder%`n
-Downloads Folder`n %DownlaodsFolder%`n
+Downloads Folder`n %DownloadsFolder%`n
 Install Review Folder`n %InstallReviewFolder%`n
 World Names File: %WorldNamesFile%`n
 Mods Used File: %ModsUsedFile%`n
-Resoureces Used File: %ResourcePacksUsedFile%`n
+Resources Used File: %ResourcePacksUsedFile%`n
 Datapacks Used File: %DatapacksUsedFile%`n
 Pix Folder: %ScreenCapOutputFolder%`n
 GUI Color: %GUIBackgroundColor%`n

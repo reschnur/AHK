@@ -54,7 +54,7 @@ Downloads Folder`n %DownloadsFolder%`n
 Install Review Folder`n %InstallReviewFolder%`n
 World Names File: %WorldNamesFile%`n
 Mods Used File: %ModsUsedFile%`n
-Resoureces Used File: %ResourcePacksUsedFile%`n
+Resources Used File: %ResourcePacksUsedFile%`n
 Datapacks Used File: %DatapacksUsedFile%`n
 Pix Folder: %ScreenCapOutputFolder%`n
 GUI Color: %GUIBackgroundColor%`n
@@ -123,7 +123,7 @@ Loop, Read, %WorldNamesFile%
 	LV_Add("",var_1, var_2, var_3)        ;,var_4,var_5,var_6) ;.... you will need to add as many as you have columns (up to 253 parameters possible)
     LV_ModifyCol(1, "AutoHdr") 
 	LV_ModifyCol(2, "AutoHdr") 
-	LV_ModifyCol(3, "0")                  ; 0 is the column width. 0 means hide the column. it is still avaialbe for processing.
+	LV_ModifyCol(3, "0")                  ; 0 is the column width. 0 means hide the column. it is still available for processing.
 }
 
 Gui, Add, Text, r2 x10 y6 w620, Select your world (only the first checked box will process) then enter your notes in the box. Click Add Note to add the note to the appropriate world's file.
@@ -276,7 +276,7 @@ ifnotexist, %TargetFolder%
    return
    }
 
-; Count files in th efolder
+; Count files in the folder
 count1 = 0
 
 loop, %sourcefolder%\*.png, 1, 0
@@ -469,7 +469,7 @@ return
 ; Change log
 ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-; V2.0   Initial release of the listview based verion
+; V2.0   Initial release of the listview based version
 ; v3.0   Add buttons for backups and datapack installs so all functions under one umbrella
-;        Converted to pathsplit version of parsing world path for navigating up from world path
-;        Add checks for dev = y to bypass funcitons that will not work in dev
+;        Converted to path split version of parsing world path for navigating up from world path
+;        Add checks for dev = y to bypass functions that will not work in dev

@@ -43,11 +43,11 @@ Loop, Read, %WorldNamesFile%
     if RecNo = 1
 	   continue
 
-    ; Skip bad folder names       case,  start, occurance	   
+    ; Skip bad folder names       case,  start, occurrence	   
     If InStr(A_LoopReadLine, "xxx", false, 1, 1)    
 	   continue
 
-    ; Skip bad folder names       case,  start, occurance	   
+    ; Skip bad folder names       case,  start, occurence	   
     If InStr(A_LoopReadLine, "downloads", false, 1, 1)    
 	   continue
 
@@ -77,7 +77,7 @@ While RowNumber < RowCount
 	LV_Add("",var_1, var_2, var_3)        ; var1 = world name, var2 = profile name, var3 = worldpath
     LV_ModifyCol(1, "AutoHdr") 
 	LV_ModifyCol(2, "AutoHdr") 
-	LV_ModifyCol(3, "0")                  ; 0 is the column width. 0 means hide the column. it is still avaialbe for processing.
+	LV_ModifyCol(3, "0")                  ; 0 is the column width. 0 means hide the column. it is still available for processing.
 
     RowNumber += 1
 }
@@ -86,8 +86,8 @@ Gui, Add, Text, r2 x10 y6 w390, Select one or more worlds then click Copy to cop
 
 Gui, Font, s10 bold
 
-Gui, Add, Button, h25 w80 default xm gSelectDatapacks, Select ; xm positons the button below the prior control
-Gui, Add, Button, h25 w80 default xm gInstallDatapacks, Install ; xm positons the button below the prior control
+Gui, Add, Button, h25 w80 default xm gSelectDatapacks, Select ; xm positions the button below the prior control
+Gui, Add, Button, h25 w80 default xm gInstallDatapacks, Install ; xm positions the button below the prior control
 
 gui, show, , Minecraft Datapack Copy
 
@@ -182,7 +182,7 @@ Loop
 } ; Process checked worlds
 
 If CheckedRows > 0
-   MsgBox, 0, %Script_Name%, Install Complete - `n   Worlds Selected: %CheckedRows%`n   Worlds Successfull %Success%., 2
+   MsgBox, 0, %Script_Name%, Install Complete - `n   Worlds Selected: %CheckedRows%`n   Worlds Successful %Success%., 2
 Else
    MsgBox, 0, %Script_Name%, No worlds were selected.
 

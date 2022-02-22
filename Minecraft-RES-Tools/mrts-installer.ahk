@@ -20,7 +20,7 @@ SetTitleMatchMode, 2                   ; 1 = Begins with, 2 = Anywhere, 3 = Exac
 ; Get install folder (default to program files)
 
 ;                            , 0 = no options, 1 = allow create new, +2 edit field
-FileSelectFolder, InstallFolder, %InstallFolder%, 3, Select folder to install toolset
+FileSelectFolder, InstallFolder, %InstallFolder%, 3, Select folder to install tool set
 if InstallFolder =
     MsgBox, You didn't select a folder. Cancel install.
 else
@@ -61,7 +61,7 @@ FileInstall, mrts-world-info.exe,      %InstallFolder%\Minecraft RES Tools\mrts-
 ; launcher
 ; 
 
-;                                                                          target,                         link name,                        work dir, args,                            description,                                                       icon file anme, shortcut key, icon #, runstate 1= normal, 2 = max, 3 = min        
+;                                                                          target,                         link name,                        work dir, args,                            description,                                                       icon file name, shortcut key, icon #, run state 1= normal, 2 = max, 3 = min        
 FileCreateShortcut, "%InstallFolder%\Minecraft RES Tools\mrts-launcher.exe", %A_StartupCommon%\Minecraft Tools.lnk, "%InstallFolder%\Minecraft RES Tools\", , MInecraft Tool Suite., "%InstallFolder%\Minecraft RES Tools\icon_cool.ico"
 
 ; Add install folder to ini as base location

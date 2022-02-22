@@ -50,9 +50,9 @@ Loop,Read, C:\Program Files (Z)\AHK-Script-Compiler\script-compiler.txt
 	   LV_Add("", var_1, var_2, var_3, var_4) ; each var is a column - max 256
        
        LV_ModifyCol(1, "AutoHdr Sort") ; Autohdr sets the width based on header or content whichever is wider  
-       LV_ModifyCol(2, "0")            ; 0 causes the width = 0 (hidden), but still avaialbe for processing.
-       LV_ModifyCol(3, "0")            ; 0 causes the width = 0 (hidden), but still avaialbe for processing.
-       LV_ModifyCol(4, "0")            ; 0 causes the width = 0 (hidden), but still avaialbe for processing.
+       LV_ModifyCol(2, "0")            ; 0 causes the width = 0 (hidden), but still available for processing.
+       LV_ModifyCol(3, "0")            ; 0 causes the width = 0 (hidden), but still available for processing.
+       LV_ModifyCol(4, "0")            ; 0 causes the width = 0 (hidden), but still available for processing.
 	   }
 }
 
@@ -133,7 +133,7 @@ exitapp
 
 OpenEntries:
 
-run,C:\Program Files (Z)\AHK-Script-Compiler\script-compiler.txt
+run, C:\Program Files (Z)\AHK-Script-Compiler\script-compiler.txt
 
 return
 
@@ -141,7 +141,7 @@ return
 OpenSource:
 
 if SrcFolder <>
-	run explorer.exe %Srcfolder%
+	run, explorer.exe %Srcfolder%
 else
 	MsgBox, 0, %Script_Name%, No source folder., 1
 
@@ -160,7 +160,3 @@ else
 	MsgBox, 0, %Script_Name%, No destination folder., 1
 
 return
-
-
-
-; v1.0    Initial release - built using the version built for Ford adapted for personal use.

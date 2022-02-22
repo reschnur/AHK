@@ -1,9 +1,9 @@
 ; Install mods
 
 ; Two different file names are necessary because the file path is stored in the 
-; inpt worlds file and there are different file structures for the different machines
+; input worlds file and there are different file structures for the different machines
 
-; Change to not close the gui. Since there are several version, the iteration migh be usefull.
+; Change to not close the gui. Since there are several version, the iteration t be useful.
 
 ; Init  
 
@@ -85,14 +85,14 @@ while RowNumber < RowCount
 {
    StringSplit, var2_, RowContent%RowNumber%,~    ; 1 = world name, 2 = profile name, 3 = world path
 
-   splitpath, var2_3, , SavesPath                 ; strip lastpart of var_3 (world name)
+   splitpath, var2_3, , SavesPath                 ; strip last part of var_3 (world name)
    splitpath, SavesPath, , ProfilePath            ; Strip last part of path (saves literal)
 	
    ;MsgBox, 0, %Script_Name%, 1: %var2_1%`n2: %var2_2%`n3: %var2_3%`nPath: %profilepath%
 
    LV_Add("", var2_2, ProfilePath)        
    LV_ModifyCol(1, "AutoHdr") 
-   LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still avaialbe for processing.
+   LV_ModifyCol(2, "0")                  ; 0 is the column width. 0 means hide the column. it is still available for processing.
    
    RowNumber += 1
 }
@@ -130,7 +130,7 @@ exitapp
 
 SelectFiles:
 
-FileSelectFile, SelectedFiles, M3, %SrcBaseFolder%, Select the mods to install.  ; M3 = Multiselect existing files where the file and path must exist.
+FileSelectFile, SelectedFiles, M3, %SrcBaseFolder%, Select the mods to install.  ; M3 = Multi select existing files where the file and path must exist.
 
 if (SelectedFiles = "")
 {

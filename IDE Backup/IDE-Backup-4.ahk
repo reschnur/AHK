@@ -1,7 +1,7 @@
 ; Backup Utility
 
 ; Two different file names are necessary because the file path is stored in the 
-; inpt worlds file and there are different file structures for the different machines
+; input worlds file and there are different file structures for the different machines
 
 ;
 

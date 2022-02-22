@@ -10,7 +10,7 @@ SetTitleMatchMode, 2                   ; 1 = Begins with, 2 = Anywhere, 3 = Exac
 
 Script_Name = Build INI File
 
-; Convert to selectoin so user can set location?
+; Convert to selection so user can set location?
 INIFile     = D:\Richard\OneDrive\Games\Minecraft Tools\Minecraft RES Tool Suite\minecraft-tools.ini
 
 
@@ -94,7 +94,7 @@ Cloud Folder`n %CloudFolder%`n
 Install Review Folder`n %InstallReviewFolder%`n
 World Names File: %WorldNamesFile%`n
 Mods Used File: %ModsUsedFile%`n
-Resoureces Used File: %ResourcePacksUsedFile%`n
+Resources Used File: %ResourcePacksUsedFile%`n
 Datapacks Used File: %DatapacksUsedFile%`n
 Pix Folder: %ScreenCapOutputFolder%`n
 GUI Color: %GUIBackgroundColor%`n
@@ -232,7 +232,7 @@ Cloud Folder`n %CloudFolder%`n
 Install Review Folder`n %InstallReviewFolder%`n
 World Names File: %WorldNamesFile%`n
 Mods Used File: %ModsUsedFile%`n
-Resoureces Used File: %ResourcePacksUsedFile%`n
+Resources Used File: %ResourcePacksUsedFile%`n
 Datapacks Used File: %DatapacksUsedFile%`n
 Pix Folder: %ScreenCapOutputFolder%`n
 GUI Color: %GUIBackgroundColor%`n

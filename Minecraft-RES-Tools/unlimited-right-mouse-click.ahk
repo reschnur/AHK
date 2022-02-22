@@ -1,7 +1,7 @@
 
 Script_Name = Mouse clicker
 
-MsgBox, 0, %Script_Name%, Start - F9 to pause, F10 to resume from pause.`n`nBobber must be on pressure plate. Point rod at the noteblock face., 2
+MsgBox, 0, %Script_Name%, Start - F9 to pause, F10 to resume from pause.`n`nBobber must be on pressure plate. Point rod at the note block face., 2
 
 Loop
 {

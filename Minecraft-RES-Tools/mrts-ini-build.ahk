@@ -35,7 +35,7 @@ Cloud Folder`n %CloudFolder%`n
 Install Review Folder`n %InstallReviewFolder%`n
 World Names File: %WorldNamesFile%`n
 Mods Used File: %ModsUsedFile%`n
-Resoureces Used File: %ResourcePacksUsedFile%`n
+Resources Used File: %ResourcePacksUsedFile%`n
 Datapacks Used File: %DatapacksUsedFile%`n
 Pix Folder: %ScreenCapOutputFolder%`n
 GUI Color: %GUIBackgroundColor%`n

@@ -5,13 +5,13 @@ SetTitleMatchMode, 2 ; 1 = Starts with, 2 = Anywhere, 3 = Exact
 
 ; Init   
 
-Script_Name = IDE Backup
+Script_Name = IDE Backup - V2
 dev = n
 tilde = ~
 RecNo := 0
 
-ProjectsFolder = C:\Users\resch\Software Projects
-ProjectNamesFile = C:\Users\resch\Software Projects\ide-backup-input.txt
+ProjectsFolder = D:\OneDrive\Software-Projects
+ProjectNamesFile = D:\OneDrive\Software-Projects\ide-backup-input.txt
 
 ; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ; Rebuild the folder list and load records to an array bypassing unneeded records
@@ -110,7 +110,7 @@ ProcessSelections:
     ; Get next row with "Checked" in the first column. Returns 0 if none found.
     RowNumber := LV_GetNext(RowNumber, "Checked") 
 
-    ; without the brackets, the LV_GetText for backupname gets skipped. No idea why.
+    ; without the brackets, the LV_GetText for backup name gets skipped. No idea why.
     if (not RowNumber) 
       break
 

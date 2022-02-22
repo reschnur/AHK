@@ -37,7 +37,7 @@ IfExist, %openfolder1%
 else
    MsgBox, The specified folder %openfolder1% does not exist.
    
-winactivate, %openfodler1%
+winactivate, %openfolder1%
 winwaitactive, %openfolder1%   
 ;                title text    x  y                       w                      h
 WinMove, %openfolder1%,    ,   0, 0,(MonitorWorkAreaRight*.5), (A_ScreenHeight * .93)

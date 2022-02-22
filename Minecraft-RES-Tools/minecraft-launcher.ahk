@@ -74,7 +74,7 @@ sleep 6500
 msgbox,65,%ScriptName%,Remember:`n`nUtility is activated using ctrl-alt-u`nHelp is activated using ctrl-alt-h, 4
 winactivate, %ScriptName% 
  
-; msgbox, Procesing completed
+; msgbox, Processing completed
    
 exitapp
 

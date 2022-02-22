@@ -178,7 +178,7 @@ BuildTabs:
         Cartography:|Existing map in top slot
         |Glass pane bottom slot lock map
         |
-        Cycle Painting|Click paintingon wall with another painting
+        Cycle Painting|Click painting on wall with another painting
         |
         Edit Sign|Right-click
       )
@@ -338,7 +338,7 @@ BuildTabs:
         R|Show recipe for item at cursor
           U|Show used in for item at cursor
           N/A|Next page of recipes
-        N/A|Previos page of recipes
+        N/A|Previous page of recipes
         Right-click|Clear search when pointing there
         In cheat mode:|
         - Left-click|Give one item when cheat on
@@ -366,7 +366,7 @@ BuildTabs:
 
     Tab_2_Block_2:
 
-      t2block2title = 2-Enhanced Book Redisgn
+      t2block2title = 2-Enhanced Book Redesign
       t2block2rows = 10
 
       t2block2x = 300
@@ -850,7 +850,7 @@ BuildTabs:
         Ctrl X/Y|Rotate X/Y Axis right 15 deg (alt=45 deg)
         Ctrl-Shift X/Y|Rotate X/Y Axis left 15 deg (alt=45 deg)
         Ctrl-Shift 1-9|Save camera position
-        Ctrl 1-9|Load saved camera positon
+        Ctrl 1-9|Load saved camera position
         Ctrl-Shift C|Center camera
         Ctrl-Shift Up/Dn| Change FOV (Left arrow resets)
       )
@@ -1132,7 +1132,7 @@ BuildTabs:
         ~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~
         Ctrl-0 (zero)|Broken Nodes Detector
         Precision|Engineering:
-          Ctrl|Snapping is in 5 degreesteps
+          Ctrl|Snapping is in 5 degree steps
           Shift|Show additional info
           Alt|Snap to guidelines
           Elektrix Road Tools|
@@ -1225,7 +1225,7 @@ BuildTabs:
             Alt-3|Ploppable
             Alt-4|Growable
             Alt-5|RICO
-            Alt-6|Grwb/RICO
+            Alt-6|Growable/RICO
             Alt-7|Prop
             Alt-8|Decal
             Alt-9|Tree
@@ -1272,7 +1272,7 @@ BuildTabs:
             Rotate (Right-click):|
             Alt|Rotate 45 degree increments
             Shift|Low detail
-            Ctrl|Precsion mode
+            Ctrl|Precision mode
             Keyboard:| 
             Left/Right|Move Left/Right 2 meters 
             Pg Up/Dn|Move Up/Down .125 meters
